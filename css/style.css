@@ -344,10 +344,12 @@ button:focus {
 ============================================================================================ */
 .home_banner_area {
   z-index: 1;
-  min-height: 700px;
+  width: 100%;
   position: relative;
-  background: url(../img/hero-back.svg) no-repeat center;
-  background-size: cover; }
+  background: url("../img/hero-back.svg") center bottom no-repeat;
+  background-size: cover;
+  min-height: 700px;
+ }
   .home_banner_area .banner_inner {
     position: absolute;
     top: 40%;
@@ -3709,7 +3711,7 @@ h6.small-heading {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
 
   .hero__img {
     top: 0%;
@@ -3735,6 +3737,51 @@ h6.small-heading {
     position: relative;
     
   }
+
+  .feature {
+    width: 20%;
+    padding: 4rem;
+    background-color: #fff;
+    box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.5);
+    position: relative;
+    min-height: 14.8rem;
+    min-width: 15.8rem;
+    margin-top:7.5rem;
+    text-align: center;
+  
+  }
+  
+  .feature__icon {
+    left: 6.5rem;
+    top: -3rem;
+    width: 5.3rem;
+    height: 5.3rem;
+    background-color: #fff;
+    box-shadow: inherit;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .feature__description{
+    color: #343434;
+  }
+  
+  .feature__img {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: block;
+    top: 50%;
+    margin: auto;
+    position: relative;
+    transform: translateY(-50%);
+  }
+  
+  .feature__title {
+    font-size: 1.5rem;
+    color: #c52847;
+    text-align: left;
+  }
+  
 
   
 }
@@ -3856,5 +3903,12 @@ Feature Style Rules
   text-align: left;
 }
 
-/*  
 
+
+/* .header_area .logo img {
+  padding: 0;
+  margin: 7px 0;
+  max-height: 50px;
+  max-width: 45px;
+  margin-top: -7px;
+} */
