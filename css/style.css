@@ -3711,51 +3711,28 @@ h6.small-heading {
 
 @media only screen and (max-width: 600px) {
 
-  .primary-btn3 {
-    display: inline-block;
-    background: #a50009;
-    padding: 0px 28px;
-    color: white;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 50px;
-    border-radius: 5px;
-    outline: none !important;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s; }
-  
-    .primary-btn3:hover {
-      background: white;
-      color: #a50009; 
-      border: 2px solid #a50009;
-    }
   .hero__img {
-    top: 60%;
-    left: 1.5rem;
+    top: 0%;
+    /* left: 1.5rem; */
     width: 100%;
     z-index: 1;
-    position: absolute
-    /* margin-bottom: 80px; */
+    position: absolute;
+    /* margin-bottom: 180px; */
   }
   
   .home_banner_area{
-    min-height: 850px;
+    min-height: 950px;
   }
   .hero__text {
-    margin-bottom: 3rem;
+    margin-top: -0.5rem;
     color: white;
-    margin-top: 2.4rem;
+    /* margin-top: 5.4rem; */
   }
   .hero__content {
     z-index: 4;
     width: auto;
-    margin-top: -18em;
-    position: absolute;
+    margin-top: 8.5rem;
+    position: relative;
     
   }
 
@@ -3836,21 +3813,20 @@ Menu Component Style Rules
 Feature Style Rules
 @mixin =====================================================================*/
 .feature {
-  width: 70%;
+  width: 60%;
   padding: 4rem;
   background-color: #fff;
   box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.5);
   position: relative;
-  margin-left: 5.5rem;
-  min-height: 18.8rem;
-  min-width: 16.8rem;
+  min-height: 16.8rem;
+  min-width: 18.8rem;
   margin-top:7.5rem;
   text-align: center;
-  left: -5.5rem;
+
 }
 
 .feature__icon {
-  left: -4rem;
+  left: 6.5rem;
   top: -3rem;
   width: 5.3rem;
   height: 5.3rem;
@@ -3877,6 +3853,7 @@ Feature Style Rules
 .feature__title {
   font-size: 1.5rem;
   color: #c52847;
+  text-align: left;
 }
 
 /*  
