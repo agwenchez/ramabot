@@ -75,8 +75,8 @@ html {
   overflow-x: hidden;
   margin-top: 1em;
   padding-top: 10rem;
-  /* padding-bottom: 3rem; */
-  background-color: #222F3F;
+  padding-bottom: 10rem;
+  background-color: #222F3F
   /* background: repeating-linear-gradient(transparent 0, transparent 4.5rem, currentcolor 0, currentcolor 9rem) 50% 1em/calc(var(--i)*2px) calc((.5*(var(--n) + .5))*13.5rem) content-box no-repeat, linear-gradient(rgba(238, 238, 238, 0.85), rgba(238, 238, 238, 0.85)), url(../img/fact-bg.jpg) 50%/cover; */
 }
 
@@ -88,7 +88,7 @@ article {
   grid-column: calc(var(--i)*var(--p) + 1);
   position: relative;
   margin-top: calc(var(--i)*-4.5rem);
-  /* border-bottom: solid 0.75rem transparent; */
+  border-bottom: solid 0.75rem transparent;
   max-width: 100%;
   min-height: 13.5rem;
   background: linear-gradient(#f2f2f2, #f2f2f2) padding-box, radial-gradient(at 50% 0, rgba(0, 0, 0, 0.3), transparent 70%) 50% 100%/115% 0.75rem border-box;
