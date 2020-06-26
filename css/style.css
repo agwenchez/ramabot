@@ -348,7 +348,7 @@ button:focus {
   position: relative;
   background: url("../img/hero-back.svg") center bottom no-repeat;
   background-size: cover;
-  min-height: 700px;
+  min-height: 900px;
  }
   .home_banner_area .banner_inner {
     position: absolute;
@@ -3044,8 +3044,10 @@ h6 {
     border-radius: 0px;
     padding: 0px;
     cursor: pointer;
-    margin-top: 27px;
-    margin-bottom: 23px; }
+    margin-top: -35px;
+    margin-bottom: 23px;
+    margin-left: 270px;
+  }
 
   .header_area {
     position: absolute; }
@@ -3106,7 +3108,8 @@ h6 {
 
   .header_area .navbar-collapse {
     max-height: 340px;
-    overflow-y: scroll; }
+    overflow-y: scroll; 
+  }
 
   .header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
     padding: 0px 15px; }
@@ -3691,17 +3694,17 @@ h6.small-heading {
 
 
 .hero__img {
-  top: 38%;
-  right: -0.5rem;
-  width: 60%;
+  top: 0%;
+  right: -2.0rem;
+  width: 65%;
   z-index: 1;
   position: absolute;
 }
 
 .hero__content {
   z-index: 4;
-  width: 32rem;
-  margin-top: 10rem;
+  width: 34rem;
+  margin-top: 3.5rem;
   position: relative;
 }
 
@@ -3711,10 +3714,18 @@ h6.small-heading {
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
+
+  
+body {
+  line-height: 25px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #7b838a; }
 
   .hero__img {
-    top: 0%;
+    top: 2%;
     /* left: 1.5rem; */
     width: 100%;
     z-index: 1;
@@ -3725,8 +3736,13 @@ h6.small-heading {
   .home_banner_area{
     min-height: 950px;
   }
+
+  /* .logo_img{
+  
+  } */
+
   .hero__text {
-    margin-top: -0.5rem;
+    margin-top: -0.8rem;
     color: white;
     /* margin-top: 5.4rem; */
   }
@@ -3738,56 +3754,10 @@ h6.small-heading {
     
   }
 
-  .feature {
-    width: 20%;
-    padding: 4rem;
-    background-color: #fff;
-    box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.5);
-    position: relative;
-    min-height: 14.8rem;
-    min-width: 15.8rem;
-    margin-top:7.5rem;
-    text-align: center;
-  
-  }
-  
-  .feature__icon {
-    left: 6.5rem;
-    top: -3rem;
-    width: 5.3rem;
-    height: 5.3rem;
-    background-color: #fff;
-    box-shadow: inherit;
-    position: absolute;
-    border-radius: 50%;
-  }
-  
-  .feature__description{
-    color: #343434;
-  }
-  
-  .feature__img {
-    width: 3.5rem;
-    height: 3.5rem;
-    display: block;
-    top: 50%;
-    margin: auto;
-    position: relative;
-    transform: translateY(-50%);
-  }
-  
-  .feature__title {
-    font-size: 1.5rem;
-    color: #c52847;
-    text-align: left;
-  }
-  
-
-  
 }
 
 .title {
-  margin-top: -190px;
+  margin-top: -200px;
   width: 60%;
   color: #222f3f;
   margin-left: 0px;
@@ -3804,7 +3774,7 @@ h6.small-heading {
 }
 
 .title__description {
-  width: 70%;
+  width: 80%;
   font-size: 1.4rem;
   color: #343434;
   font-weight: 300;
@@ -3814,6 +3784,26 @@ h6.small-heading {
   margin-top: 60px;
 }
 
+.title2 {
+  margin-top: 10px;
+  /* width: 60%; */
+  color: #222f3f;
+  margin-left: 0px;
+  text-align: center;
+}
+
+.title__subtitle2 {
+
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  color: #343434;
+  display: block;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  margin-top: 80px;
+  text-align: center;
+  
+}
 /*
 Menu Component Style Rules
 @mixin =====================================================================*/
@@ -3868,7 +3858,7 @@ Feature Style Rules
   min-height: 16.8rem;
   min-width: 18.8rem;
   margin-top:7.5rem;
-  text-align: center;
+  text-align: left;
 
 }
 
@@ -3912,3 +3902,50 @@ Feature Style Rules
   max-width: 45px;
   margin-top: -7px;
 } */
+
+
+.business {
+  padding: 8rem 0;
+}
+
+.business-add {
+  width: 100%;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.business-add__container {
+  margin-top: 8rem;
+}
+
+.business-add__title {
+  font-size: 1.6rem;
+  color: #c52847;
+}
+
+.business-add__icon {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin: 0 auto 4rem;
+  background-color: #fff;
+  box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.6);
+}
+
+.business-add__img {
+  top: 50%;
+  left: 50%;
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+
+.business-add__body {
+  text-align: left;
+}
+
+a, span {
+  display: inline-block;
+  text-decoration: none;
+}
