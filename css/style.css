@@ -112,6 +112,8 @@ button:focus {
 .title-bg {
   background: #002347; }
 
+
+
   /* card styling */
 
 .steps{
@@ -220,16 +222,241 @@ button:focus {
   text-decoration: none;
   color: #fff;
 
-  /* .container2 .card .content p{
-    margi
-  } */
 
+}
+
+/* end card styling */
+
+
+/*
+    Facts Style Rules
+    @mixin =====================================================================*/
+    .facts {
+      color: #fff;
+      padding: 5rem 0;
+      background-image: linear-gradient(to bottom, rgba(34, 47, 63, 0.94), rgba(34, 47, 63, 0.94)), url(../img/fact-bg.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    
+    .fact {
+      text-align: center;
+      text-transform: capitalize;
+    }
+    
+    .fact__icon {
+      width: 8.8rem;
+      height: 8.8rem;
+      border-radius: 50%;
+      font-size: 3.4rem;
+      margin-bottom: 1.5rem;
+      margin-top: 3rem;
+      border: 2px solid #fff;
+    }
+    
+    .fact__icon i {
+      display: inline-block;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    .fact__title {
+      line-height: 1.1;
+      font-size: 2.4rem;
+      margin-bottom: 0;
+    }
+    
+    .fact__subtitle {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+
+/*
+    Footer Style Rules
+    @mixin =====================================================================*/
+    .footer {
+      position: relative;
+      padding-top: 8rem;
+      background-color: #fff;
+      background-image: url(../img/footer-back.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-height: 700px;
+    }
+    
+    .footer.footer--no-bgc {
+      background-color: transparent;
+    }
+    
+    .footer__contact {
+      margin-top: 2rem;
+    }
+    
+    .footer__logo.logo {
+      text-align: right;
+      margin-top: -220px;
+      align-items: center;
+    }
+    
+    .footer__logo.logo .logo__img {
+      width: 8rem;
+      margin: 0 auto 2rem;
+    }
+    
+    .footer__logo.logo .logo__text {
+      line-height: 1;
+      font-size: 4rem;
+      color: #959595;
+      
+    }
+    
+    .footer__content {
+      height: 7rem;
+      color: #fff;
+      margin-top: 8rem;
+      
+    }
+    
+    .footer__content > *, .footer__content > *::after, .footer__content > *::before {
+      top: 50%;
+      position: relative;
+      transform: translateY(-50%);
+    }
+    
+    .footer__text {
+      font-size: 3.2rem;
+      font-weight: 300;
+      text-align: right;
+    }
+    
+    .footer__footer {
+      color: #959595;
+      text-align: center;
+      padding: 4rem 0;
+      border-top: 1px solid #c52847;
+    }
+    
+    .footer__link {
+      display: inline-block;
+      margin-bottom: 2rem;
+    }
+    
+    .footer__link-item {
+      float: left;
+    }
+    
+    .footer__link-item:not(:last-of-type)::after {
+      content: '|';
+      display: inline-block;
+      margin: 0 3rem;
+    }
+    
+    .footer__link-link {
+      text-transform: capitalize;
+      color: currentColor;
+    }
+    
+    .footer__link-link:hover, .footer__link-link:active {
+      color: #c52847;
+    }
+    
+
+
+
+/* social buttons mpya */
+ .center{
+   margin-top: -100px;
+ }   
+
+.center ul{
+  display: flex;
+}
+.center ul li{
+  width: 60px;
+  height: 60px;
+  margin: 0 16px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.center ul li:before,
+.center ul li:after{
+  position: absolute;
+  content: '';
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: all .3s linear;
+}
+.center ul li:nth-child(1):before{
+  border: 2px solid #1DA1F2;
+}
+.center ul li:nth-child(1):after{
+  background: #1DA1F2;
+}
+.center ul li:nth-child(2):before{
+  border: 2px solid #d72888;
+}
+.center ul li:nth-child(2):after{
+  background: #d72888;
+}
+.center ul li:nth-child(3):before{
+  border: 2px solid #007bb6;
+}
+.center ul li:nth-child(3):after{
+  background: #007bb6;
+}
+.center ul li:nth-child(4):before{
+  border: 2px solid #FF0000;
+}
+.center ul li:nth-child(4):after{
+  background: #FF0000;
+}
+.center ul li:after{
+  opacity: 0;
+  z-index: -1;
+}
+.center ul li:hover:after{
+  opacity: 1;
+}
+.center ul li i{
+  font-size: 45px;
+}
+.center ul li:nth-child(1) .fab{
+  color: #1DA1F2;
+  font-size: 125%;
+}
+.center ul li:nth-child(2) .fab{
+  color: #d72888;
+  font-size: 135%;
+
+}
+.center ul li:nth-child(3) .fab{
+  color: #007bb6;
+  font-size: 135%;
+}
+.center ul li:nth-child(4) .fab{
+  color: #FF0000;
+  font-size: 135%;
+}
+.center ul li:hover .fab{
+  color: white;
+  transition: .3s linear;
+}
+.center ul li:hover:before{
+  transform: scale(1.1);
 }
 
 
 
 
-/* end card styling */
+
+    /* end of social link mpya */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .section_gap {
@@ -3880,6 +4107,193 @@ body {
     position: relative;
     
   }
+  
+/*
+    Footer Style Rules
+    @mixin =====================================================================*/
+    .footer {
+      position: relative;
+      padding-top: 8rem;
+      background-color: #fff;
+      background-image: url(../img/footer-back.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-height: 700px;
+      overflow: hidden;
+    }
+    
+    .footer.footer--no-bgc {
+      background-color: transparent;
+    }
+    
+    .footer__contact {
+      margin-top: -5rem;
+      font-size: 1rem;
+    }
+    
+    .footer__logo.logo {
+      text-align: right;
+      margin-top: 60px;
+      align-items: center;
+    }
+    
+    .footer__logo.logo .logo__img {
+      width: 5rem;
+      margin-bottom: 7px;
+    }
+    
+    .footer__logo.logo .logo__text {
+      line-height: 1;
+      font-size: 1.5rem;
+      color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .footer__content {
+      height: 7rem;
+      color: #fff;
+      margin-top: 8rem;
+      
+    }
+    
+    .footer__content > *, .footer__content > *::after, .footer__content > *::before {
+      top: 100%;
+      position: relative;
+      transform: translateY(-50%);
+    }
+    
+    .footer__text {
+      font-size: 1.2rem;
+      font-weight: 300;
+      text-align: right;
+      margin-top: -80px;
+    }
+    
+    .footer__footer {
+      color: #959595;
+      text-align: center;
+      padding: 4rem 0;
+      border-top: 1px solid #c52847;
+    }
+    
+    .footer__copyright{
+      margin-top: -36px;
+      margin-bottom: 20px;
+    }
+    .footer__link {
+      display: inline-block;
+      margin-top: -10rem;
+    } 
+    
+    /* .footer__link-item {
+      float: left;
+      margin-top: -2.5rem;
+    } */
+    
+    .footer__link-item:not(:last-of-type)::after {
+      content: '|';
+      display: inline-block;
+      margin: 0 3rem;
+    }
+    
+    .footer__link-link {
+      text-transform: capitalize;
+      color: currentColor;
+    }
+    
+    .footer__link-link:hover, .footer__link-link:active {
+      color: #c52847;
+    }
+    
+
+
+
+/* social buttons mpya */
+    
+
+.center ul{
+  display: flex;
+}
+.center ul li{
+  width: 60px;
+  height: 60px;
+  margin: 0 16px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.center ul li:before,
+.center ul li:after{
+  position: absolute;
+  content: '';
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: all .3s linear;
+}
+.center ul li:nth-child(1):before{
+  border: 2px solid #1DA1F2;
+}
+.center ul li:nth-child(1):after{
+  background: #1DA1F2;
+}
+.center ul li:nth-child(2):before{
+  border: 2px solid #d72888;
+}
+.center ul li:nth-child(2):after{
+  background: #d72888;
+}
+.center ul li:nth-child(3):before{
+  border: 2px solid #007bb6;
+}
+.center ul li:nth-child(3):after{
+  background: #007bb6;
+}
+.center ul li:nth-child(4):before{
+  border: 2px solid #FF0000;
+}
+.center ul li:nth-child(4):after{
+  background: #FF0000;
+}
+.center ul li:after{
+  opacity: 0;
+  z-index: -1;
+}
+.center ul li:hover:after{
+  opacity: 1;
+}
+.center ul li i{
+  font-size: 45px;
+}
+.center ul li:nth-child(1) .fab{
+  color: #1DA1F2;
+  font-size: 125%;
+}
+.center ul li:nth-child(2) .fab{
+  color: #d72888;
+  font-size: 135%;
+
+}
+.center ul li:nth-child(3) .fab{
+  color: #007bb6;
+  font-size: 135%;
+}
+.center ul li:nth-child(4) .fab{
+  color: #FF0000;
+  font-size: 135%;
+}
+.center ul li:hover .fab{
+  color: white;
+  transition: .3s linear;
+}
+.center ul li:hover:before{
+  transform: scale(1.1);
+}
+
+
+    /* end of social link mpya */
 
 }
 

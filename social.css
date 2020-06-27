@@ -1,0 +1,82 @@
+
+
+.center ul{
+  display: flex;
+}
+.center ul li{
+  width: 60px;
+  height: 60px;
+  margin: 0 16px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.center ul li:before,
+.center ul li:after{
+  position: absolute;
+  content: '';
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: all .3s linear;
+}
+.center ul li:nth-child(1):before{
+  border: 2px solid #1DA1F2;
+}
+.center ul li:nth-child(1):after{
+  background: #1DA1F2;
+}
+.center ul li:nth-child(2):before{
+  border: 2px solid #d72888;
+}
+.center ul li:nth-child(2):after{
+  background: #d72888;
+}
+.center ul li:nth-child(3):before{
+  border: 2px solid #007bb6;
+}
+.center ul li:nth-child(3):after{
+  background: #007bb6;
+}
+.center ul li:nth-child(4):before{
+  border: 2px solid #FF0000;
+}
+.center ul li:nth-child(4):after{
+  background: #FF0000;
+}
+.center ul li:after{
+  opacity: 0;
+  z-index: -1;
+}
+.center ul li:hover:after{
+  opacity: 1;
+}
+.center ul li i{
+  font-size: 45px;
+}
+.center ul li:nth-child(1) .fab{
+  color: #1DA1F2;
+  font-size: 125%;
+}
+.center ul li:nth-child(2) .fab{
+  color: #d72888;
+  font-size: 125%;
+
+}
+.center ul li:nth-child(3) .fab{
+  color: #007bb6;
+  font-size: 125%;
+}
+.center ul li:nth-child(4) .fab{
+  color: #FF0000;
+  font-size: 125%;
+}
+.center ul li:hover .fab{
+  color: white;
+  transition: .3s linear;
+}
+.center ul li:hover:before{
+  transform: scale(1.1);
+}
