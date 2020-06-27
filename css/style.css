@@ -284,7 +284,8 @@ button:focus {
       background-image: url(../img/footer-back.svg);
       background-repeat: no-repeat;
       background-size: cover;
-      max-height: 700px;
+      max-height: 800px;
+      margin-bottom:0px;
     }
     
     .footer.footer--no-bgc {
@@ -368,7 +369,8 @@ button:focus {
 
 /* social buttons mpya */
  .center{
-   margin-top: -100px;
+   margin-top: 0px;
+   
  }   
 
 .center ul{
@@ -4166,13 +4168,12 @@ body {
       font-size: 1.2rem;
       font-weight: 300;
       text-align: right;
-      margin-top: -80px;
+      margin-top: -100px;
     }
     
     .footer__footer {
       color: #959595;
       text-align: center;
-      padding: 4rem 0;
       border-top: 1px solid #c52847;
     }
     
@@ -4187,7 +4188,7 @@ body {
     
     /* .footer__link-item {
       float: left;
-      margin-top: -2.5rem;
+      margin-top: -1.5rem;
     } */
     
     .footer__link-item:not(:last-of-type)::after {
@@ -4213,6 +4214,7 @@ body {
 
 .center ul{
   display: flex;
+  margin-top:-120px;
 }
 .center ul li{
   width: 60px;
