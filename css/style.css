@@ -113,6 +113,68 @@ button:focus {
   background: #002347; }
 
 
+/* top banner styling */
+
+.top-section {
+  margin-top: 5rem;
+  color: #959595;
+  text-align: center;
+  
+  padding: 30px 40px 30px 40px;
+}
+
+.top-banner__container {
+  /* padding: 12rem 18rem; */
+  background-color: #f4f4f4;
+}
+
+.top-banner.top-banner--disclaimer {
+  text-align: justify;
+}
+
+.top-banner__title {
+  font-size: 1.6rem;
+  color: #222f3f;
+}
+
+.top-banner__text {
+  font-size: 1.2rem;
+  font-weight: 300;
+  justify-content: left;
+  text-align: left;
+  margin-top: 0px;
+  padding-left:7rem;
+  padding-right:7rem;
+
+}
+
+.top-banner__text:not(:last-of-type) {
+  margin-bottom: 3rem;
+}
+
+/* end of top banner styling */
+
+
+.about__group-pic {
+  padding-bottom: 8rem;
+  margin-bottom: -170px;
+}
+
+.about__group-pic__container {
+  width: 100%;
+  height: 40rem;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+.about__group-pic__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
 
   /* card styling */
 
@@ -293,12 +355,13 @@ button:focus {
     }
     
     .footer__contact {
-      margin-top: 2rem;
+      margin-top: -1rem;
+      font-size: 1.8rem;
     }
     
     .footer__logo.logo {
       text-align: right;
-      margin-top: -220px;
+      margin-top: -50px;
       align-items: center;
     }
     
@@ -309,7 +372,7 @@ button:focus {
     
     .footer__logo.logo .logo__text {
       line-height: 1;
-      font-size: 4rem;
+      font-size: 2.4rem;
       color: #959595;
       
     }
@@ -328,7 +391,7 @@ button:focus {
     }
     
     .footer__text {
-      font-size: 3.2rem;
+      font-size: 2.2rem;
       font-weight: 300;
       text-align: right;
     }
@@ -364,7 +427,14 @@ button:focus {
       color: #c52847;
     }
     
+/* final styling */
 
+.final{
+  justify-content: space-evenly;
+   margin-left:20px; 
+   margin-bottom:25px; 
+   margin-top: -35px;
+}
 
 
 /* social buttons mpya */
@@ -768,7 +838,7 @@ button:focus {
 
 .banner_area {
   position: relative;
-  background: url(../img/banner/banner.jpg) no-repeat center center;
+  background: url(../img/about-back.jpg) no-repeat center center;
   z-index: 1;
   min-height: 392px;
   padding-top: 0 !important; }
@@ -4207,10 +4277,28 @@ body {
     }
     
 
+/* final small screen styling */
+.final{
+  justify-content: space-evenly;
+   margin-left:20px; 
+   margin-bottom:45px; 
+   margin-top: -50px;
+
+}
+
+/* top banner area responsive */
+.top-banner__text {
+  font-size: 1.2rem;
+  font-weight: 300;
+  justify-content: left;
+  text-align: left;
+  margin-top: 0px;
+  padding:0px;
+
+}
 
 
 /* social buttons mpya */
-    
 
 .center ul{
   display: flex;
