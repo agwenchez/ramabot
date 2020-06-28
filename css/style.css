@@ -3469,9 +3469,9 @@ h6 {
     border-radius: 0px;
     padding: 0px;
     cursor: pointer;
-    margin-top: -35px;
-    margin-bottom: 23px;
-    margin-left: 270px;
+    right: 0;
+    top: 0;
+   align-content: flex-end;
   }
 
   .header_area {
@@ -4481,7 +4481,7 @@ Menu Component Style Rules
 Feature Style Rules
 @mixin =====================================================================*/
 .feature {
-  width: 60%;
+  width: 70%;
   padding: 4rem;
   background-color: #fff;
   box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.5);
