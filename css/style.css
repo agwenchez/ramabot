@@ -291,6 +291,186 @@ button:focus {
 
 
 /*
+    Pricing Style Rules
+    @mixin =====================================================================*/
+    .pricings {
+      padding: 8rem 0 12rem;
+    }
+    
+    .pricings__list.row {
+      padding: 0 2rem;
+    }
+    
+    .pricings__list.row .pricings__table {
+      margin: 0;
+      height: 70%;;
+    }
+    
+    .pricing {
+      padding: 0 4rem;
+      background-color: #fff;
+      border: 1px solid #d9dadb;
+    }
+    
+    .pricing__header {
+      color: #fff;
+      padding: 4rem;
+      min-height: 26rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      margin-top: -2rem;
+      background-color: #222f3f;
+    }
+    
+    .pricing__header::after {
+      left: 0;
+      bottom: -6rem;
+      content: '';
+      height: 12rem;
+      width: 100%;
+      background: #fff;
+      position: absolute;
+      transform: skewY(-16deg);
+    }
+    
+    .pricing__title {
+      line-height: 1;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+    
+    .pricing__description {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+    
+    .pricing__price {
+      width: 10rem;
+      height: 10rem;
+      z-index: 2;
+      text-align: center;
+      background: #f4f4f4;
+      box-sizing: content-box;
+      border-radius: 50%;
+      margin: -12rem auto 0;
+      position: relative;
+      border: 1.6rem solid #fff;
+      padding: 1.8rem;
+    }
+    
+    .pricing__price-list, .pricing__price-img {
+      top: 50%;
+      transform: translateY(-50%);
+      position: relative;
+    }
+    
+    .pricing__price-amount {
+      font-size: 2rem;
+      line-height: 0.5;
+      display: inline-block;
+      vertical-align: middle;
+      font-family: "Bree Serif", serif;
+    }
+    
+    .pricing__price-time {
+      vertical-align: middle;
+      font-size: 1rem;
+      display: inline-block;
+      text-transform: uppercase;
+      text-align: left;
+    }
+    
+    .pricing__price-img {
+      width: 6.5rem;
+      height: 6.5rem;
+      display: inline-block;
+    }
+    
+    .pricing__price-separator {
+      width: 50%;
+      margin: .8rem auto;
+    }
+    
+    .pricing__price-separator hr {
+      border: none;
+      border-top: 1px solid #d9dadb;
+    }
+    
+    .pricing__body {
+      color: #959595;
+      margin-top: 3rem;
+    }
+    
+    .pricing__footer {
+      margin-top: 4rem;
+      text-align: center;
+      margin-bottom: -3.5rem;
+    }
+    
+    .pricing__footer .pricing__btn {
+      color: #fff;
+      background: #222f3f;
+    }
+    
+    .pricing.pricing--choose .pricing__header {
+      background: #c52847;
+    }
+    
+    .pricing.pricing--choose .pricing__footer .pricing__btn {
+      background: #c52847;
+    }
+    /*end of pricing  */
+/*
+    Side-Menu Style Rules
+    @mixin =====================================================================*/
+    .side-menu {
+      top: 16.2rem;
+      position: sticky;
+    }
+    
+    .side-menu__list {
+      padding: 3rem 0;
+      text-transform: capitalize;
+      background-color: #fff;
+      margin-right: 4rem;
+    }
+    
+    .side-menu__link {
+      height: 100%;
+      padding: 1.6rem 3rem;
+      vertical-align: middle;
+      color: #959595;
+      display: block;
+      position: relative;
+    }
+    
+    .side-menu__link::after {
+      content: '';
+      left: 0;
+      bottom: 0;
+      width: 0.4rem;
+      height: 0;
+      background-color: #c52847;
+      display: inline-block;
+      position: absolute;
+      transition: height .3s;
+    }
+    
+    .side-menu__link.side-menu__link--active {
+      color: #c52847;
+    }
+    
+    .side-menu__link.side-menu__link--active::after {
+      height: 100%;
+    }
+    
+    .side-menu__link:hover, .side-menu__link:active {
+      color: #c52847;
+    }
+    
+
+/*
     Facts Style Rules
     @mixin =====================================================================*/
     .facts {
