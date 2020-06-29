@@ -472,8 +472,9 @@ input[type=submit]:hover {
     Side-Menu Style Rules
     @mixin =====================================================================*/
     .side-menu {
-      top: 0.2rem;
+      position: -webkit-sticky; /* Safari */
       position: sticky;
+      top: 0;
     }
     
     .side-menu__list {
